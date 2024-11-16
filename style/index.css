@@ -1,0 +1,35 @@
+#main-content {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+#main-content .header {
+    color: green;
+    font size: 2rem;
+    grid-area: header;
+    background-color: lightblue;
+}
+
+#main-content .menu{
+    display: grid;
+    background-color: green;
+    border: 1px green;
+    border-style: hidden;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+#main-content .menu a{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: green;
+    width: 150px;
+    height: 200px;
+    padding: 1rem;
+}
+
+.footer{
+    grid-area: footer;
+    align-items: center;
+}
